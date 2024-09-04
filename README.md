@@ -1,2 +1,2 @@
-# stack
-Implementação de pilha em Python. A pilha suporta inteiros com sinal.
+# py_stack
+Implementação de pilha simples em Python.

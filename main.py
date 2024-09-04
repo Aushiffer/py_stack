@@ -2,12 +2,12 @@ from stack import Stack
 
 if __name__ == '__main__':
     opt = 0
-    s = Stack()
+    st = Stack()
 
     while opt != 6:
-        s.print_stack()
+        st.print_stack()
     
-        print('1: push')
+        print('\n1: push')
         print('2: pop')
         print('3: size of the stack')
         print('4: is the stack empty?')
@@ -15,17 +15,19 @@ if __name__ == '__main__':
         print('6: quit')
     
         opt = int(input())
+
+        print('\n')
     
         match opt:
             case 1:
-                val = int(input('Input value for push(): '))
+                val = input('Input value for the push() function: ')
     
-                s.push(val)
+                st.push(val)
             case 2:
-                s.pop()
+                st.pop()
             case 3:
-                print(f'Size: {s.size()}')
+                print(f'Size: {st.get_size()}')
             case 4:
-                print(f'Empty: {s.empty()}')
+                print(f'Empty: {st.empty()}')
             case 5:
-                s.peek()
+                print(f'Top: {st.peek()}')
